@@ -1,22 +1,68 @@
 .split {
     height: 100vh;
-    width: 60%;
+    width: 50%;
     position: fixed;
     z-index: 1;
     top: 0;
     overflow-x: hidden;
     padding-top: 20px;
+    text-align: justify;
   }
   
   .left {
     left: 0;
-    width: 40%;
+    width: 50%;
+    display: flex;
   }
   
   .right {
     right: 0;
     padding-top: 0;
   }
+  .profile{
+    width: 60%;
+    margin: 10% auto;
+  }
+
+  /* profile section */
+  .name{
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 0;
+  }
+  .role{
+      font-size: 1.25 rem;
+      line-height: 1;
+      margin-top: 10px;
+  }
+
+  .social {
+      bottom: 100px;
+      position: absolute;
+  }
+  .social ul li{
+    display:inline;
+    margin: 10px;
+  }
+  .social ul li a{
+    text-decoration: none;
+  }
+  .social ul li a i{
+   font-size: 1.5rem;
+  }
+
+  .nav{
+      margin: 70px auto;
+  }
+  .nav a{
+      text-decoration: none;
+      padding-top: .75 rem;
+      padding-bottom: .75rem;
+      align-items: center;
+      display: flex;
+      text-transform: uppercase;
+  }
+
   
   @media (max-width: 768px) { 
     .split{
