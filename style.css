@@ -30,7 +30,14 @@ a{
     width: 60%;
     margin: 10% auto;
   }
+responsive controlls
 
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
   /* profile section */
   .name{
       font-size: 3rem;
@@ -127,6 +134,7 @@ a{
       display: block;
       position: relative;
       width: 100%;
+      height: auto;
     }
     .left{
       display: block;
@@ -136,4 +144,32 @@ a{
      .centered{
       padding: 5px;
     }
+    .desktop{
+        display:none !important;
+    }
+    .mobile{
+        display: block !important;
+    }
+    .social{
+        position: relative !important;
+        bottom: unset !important;
+        align-items: unset;
+    }
+    .profile{
+
+            width: 90%;
+            margin: 1% auto;
+
+    }
+    .details {
+        width: 90%;
+        margin: 1% auto;
+        }
+
+    .sticky{
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+    }
+   
   }

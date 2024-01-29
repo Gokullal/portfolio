@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,7 +15,8 @@
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -28,7 +30,7 @@
           leverage DevOps and scripting skills as a DevOps engineer to maximise
           the growth of the organisation.
         </p>
-        <div class="nav">
+        <div class="nav desktop">
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#rel-experience">Relavent Experience</a></li>
@@ -57,30 +59,40 @@
 
     <div class="split right">
         <div class="details">
-            <div class="about details-sec" id="about">
-                My interest in technology sparked when I was 15 and created my first
-                website, a simple "Hello World!" display. Since then, I delved into web
-                design and computers, teaching myself HTML, CSS, and PHP while doing my
-                bachelor's degree. 
-              </br> My first step towards my career was when I helped develop my
-                college's website. After graduation, I became a WordPress developer at
-                Intertoons Internet Services. While starting with WordPress, my
-                curiosity led me to volunteer for various projects, like handling
-                servers. I quickly took on more responsibilities, independently managing
-                new servers, ensuring regular backups, handling migrations, and updating
-                dotnet web applications to the virtual machines regularly. Over time, I oversaw a significant
-                infrastructure, managing over 15 servers and all WordPress websites,
-                earning Employee of the Month twice. 
-                </br>I then pursued an MSC in Cloud
-                Computing in the UK, graduating with distinction. Throughout my studies,
-                I undertook assignments showcasing my ability to adapt to new
-                technologies and deepened my knowledge of Azure. Now, with both
-                knowledge and practical experience, I'm eager to transition into a Cloud
-                Engineer role, contributing to the dynamic field of cloud computing
-              </div>
-              <div class="rel-experience  details-sec" id="rel-experience">
+            <section class="about details-sec" id="about">
+                <div class="mobile mobile-nav">
+                    <h3>About</h3>
+                </div>
+              
+                <p>
+                    My interest in technology sparked when I was 15 and created my first
+                    website, a simple "Hello World!" display. Since then, I delved into web
+                    design and computers, teaching myself HTML, CSS, and PHP while doing my
+                    bachelor's degree. 
+                  </br> My first step towards my career was when I helped develop my
+                    college's website. After graduation, I became a WordPress developer at
+                    Intertoons Internet Services. While starting with WordPress, my
+                    curiosity led me to volunteer for various projects, like handling
+                    servers. I quickly took on more responsibilities, independently managing
+                    new servers, ensuring regular backups, handling migrations, and updating
+                    dotnet web applications to the virtual machines regularly. Over time, I oversaw a significant
+                    infrastructure, managing over 15 servers and all WordPress websites,
+                    earning Employee of the Month twice. 
+                    </br>I then pursued an MSC in Cloud
+                    Computing in the UK, graduating with distinction. Throughout my studies,
+                    I undertook assignments showcasing my ability to adapt to new
+                    technologies and deepened my knowledge of Azure. Now, with both
+                    knowledge and practical experience, I'm eager to transition into a Cloud
+                    Engineer role, contributing to the dynamic field of cloud computing
+                </p>
+               <span class="end"></span>
+            </section>
+              <section class="rel-experience  details-sec" id="rel-experience">
+                <div class="mobile mobile-nav">
+                    <h3>Relavent Experience</h3>
+                </div>
                   <div class="row highlight">
-                      <div class="col-4">
+                      <div class="col-4 ">
                           <p>Aug 2021 - Aug 2022</p>
                       </div>
                       <div class="col-8">
@@ -105,8 +117,12 @@
                                 </ul>
                       </div>
                   </div>
-              </div>
-              <div class="other-experience  details-sec" id="other-experience">
+                  <span class="end"></span>
+              </section>
+              <section class="other-experience  details-sec" id="other-experience">
+                <div class="mobile mobile-nav">
+                    <h3>Other Experience</h3>
+                </div>
                 <div class="row highlight">
                     <div class="col-4">
                         <p>Dec 2021 - Present</p>
@@ -150,8 +166,12 @@
                               </ul>
                     </div>
                 </div>
-              </div>
-              <div class="certifications  details-sec" id="certifications">
+                <span class="end"></span>
+              </section>
+              <section class="certifications  details-sec" id="certifications">
+                <div class="mobile mobile-nav">
+                    <h3>Certifications</h3>
+                </div>
                 <a href="https://www.credly.com/badges/7ec2ef75-6d75-4468-9009-7bbc74420811/public_url"> <div class="row highlight">
                    
                       <div class="col-3">
@@ -199,8 +219,9 @@
                     </div>
                  
                 </div> </a>
-              </div>
-        </div>
+                <span class="end"></span>
+              </section>
+    </div>
      
     </div>
   </body>
