@@ -1,6 +1,21 @@
 body{
-    background-color: #FAF9F6 !important;
+  background-color: #000000 !important; 
+    color: rgb(156 163 175) !important;
+    display: flex;
 }
+
+.spotlight{
+  z-index: 999;
+  width: 70%;
+  height: 70%;
+ background-color: red;  
+ border-radius: 100%;
+ opacity: 40%;
+ box-shadow: inset 0px 0px 40px 40px ;
+  pointer-events: none;
+  position: absolute;
+}
+
 a{
     text-decoration: none !important;
     color: inherit !important;
@@ -30,7 +45,7 @@ a{
     width: 60%;
     margin: 10% auto;
   }
-responsive controlls
+/* responsive controlls */
 
 .desktop{
     display: block;
@@ -102,7 +117,7 @@ responsive controlls
       padding-left: .75rem;
       padding-right: .75rem;
       border-radius: 9999px;
-      background-color: rgba(45,212,191,.1);
+      background-color:  	#7d12ff;
       --tw-text-opacity: 1;
   color: rgb(94 234 212/var(--tw-text-opacity));
   line-height: 2rem;
