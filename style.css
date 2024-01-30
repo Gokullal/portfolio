@@ -94,7 +94,7 @@ a{
   }
   .skills li{
       display: inline;
-      background-color: aquamarine;
+      
       padding: 4px 8px;
       margin-top: .5rem;
       border-radius: 1px;
@@ -104,7 +104,8 @@ a{
       padding-left: .75rem;
       padding-right: .75rem;
       border-radius: 9999px;
-      background-color:  	#7d12ff;
+      color: rgb(255, 174, 66) !important; 
+      background-color: rgba(255, 214, 92, 0.1) !important;
       --tw-text-opacity: 1;
   color: rgb(94 234 212/var(--tw-text-opacity));
   line-height: 2rem;
@@ -117,9 +118,10 @@ a{
   }
   .highlight:hover{
     
-    background-color: white;
-      box-shadow: 0px 0px 1px 1px;
+
+      /* box-shadow: 0px 0px 1px 1px; */
       opacity: 1 !important;
+      background: rgb(16, 26, 51) !important;
 
   }
 
