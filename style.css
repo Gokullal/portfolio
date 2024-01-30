@@ -187,5 +187,9 @@ a{
     footer{
       height: 60px;
     }
+    .highlight{
+      opacity: 1 !important;
+
+    }
    
   }
