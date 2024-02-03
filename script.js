@@ -8,11 +8,19 @@ function sticky_relocate_2() {
     var about_end = $('#about .end').offset().top - 100;
     if (window_top >= about_top ) {
         $('#about .mobile-nav').addClass('sticky');
+        
     } 
     else {
         $('#about .mobile-nav').removeClass('sticky');
         $('#about .mobile-nav h3').text('About');
     }
+
+    //Education
+    var rel_experience_top = $('#education').offset().top;
+    var rel_experience_end = $('#education .end').offset().top - 100;
+    if (window_top >= rel_experience_top && window_top < rel_experience_end) {
+        $('#about .mobile-nav h3').text('Education');
+    } 
 
     // Relevant Experience Section
     var rel_experience_top = $('#rel-experience').offset().top;
@@ -59,4 +67,76 @@ function handleMouseMove(event) {
 }
 
 document.addEventListener("mousemove", handleMouseMove)
+
+
+
+
+
+// active
+const navLinks = document.querySelectorAll('.nav a');
+const sections = document.querySelectorAll('section');
+
+window.addEventListener('scroll', navHighlighter);
+
+function navHighlighter(event) {
+  // Check if the scroll event target is the document.body
+  if (event.target !== document.body) {
+    return;
+  }
+
+  let scrollY = window.pageYOffset;
+
+  sections.forEach(section => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 50;
+    const sectionId = section.getAttribute('id');
+
+    const link = document.querySelector(`.nav a[href="#${sectionId}"]`);
+
+    if (link) {
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    } else {
+      console.error(`Link not found for section with ID: ${sectionId}`);
+    }
+  });
+}
+
+
+
+
+//scroll
+
+navLinks.forEach(link => {
+  link.addEventListener('click', smoothScroll);
+});
+
+function smoothScroll(e) {
+  e.preventDefault();
+
+  // Removing 'active' class from all links
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+  });
+
+  // Adding 'active' class to the clicked link
+  this.classList.add('active');
+
+  const targetId = this.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  } else {
+    console.error(`Element with ID ${targetId} not found.`);
+  }
+}
+
+
 });
