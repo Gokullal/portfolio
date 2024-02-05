@@ -139,4 +139,37 @@ function smoothScroll(e) {
 }
 
 
+
+
+
+
+
+const navLink = document.querySelectorAll('.split.left .nav.desktop ul li a');
+  // const rightSplit = document.querySelector('.split.right');
+  const detailsSections = document.querySelectorAll('.details-sec');
+
+  // Create an observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // The section is in view
+        const visibleSection = entry.target.id;
+        // console.log(visibleSection);
+  
+        // Update the active class for navigation links
+        navLink.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${visibleSection}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, { threshold: 0.5 }); // Adjust the threshold as needed
+  
+  // Observe each details section
+  detailsSections.forEach(section => {
+    observer.observe(section);
+  });
+
 });

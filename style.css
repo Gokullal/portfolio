@@ -8,9 +8,17 @@ body {
 * {
   /* text-align: justify; */
 }
+b {
+  font-weight: 900;
+  color: white;
+}
 a {
   text-decoration: none !important;
   color: inherit !important;
+}
+h5,
+h3 {
+  font-size: 1.15rem;
 }
 .split {
   height: 100vh;
@@ -82,7 +90,7 @@ a {
   padding-bottom: 0.75rem;
   align-items: center;
   display: flex;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .nav ul li {
   list-style: none;
@@ -103,6 +111,7 @@ a {
 .active {
   opacity: 1 !important;
   font-size: 20px;
+  color: white !important;
 }
 
 /* Details section */
@@ -186,6 +195,8 @@ a {
   }
   .mobile {
     display: block !important;
+    color: white;
+    font-weight: 1000;
   }
   .social {
     position: relative !important;
@@ -252,4 +263,7 @@ a {
 ul {
   text-align: left;
   padding: 0 !important;
+}
+#education .highlight .row ul {
+  padding: 7px !important;
 }
